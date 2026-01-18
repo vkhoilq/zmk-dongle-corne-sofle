@@ -67,19 +67,18 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
 
 &pro_micro_i2c {
     status = "okay";
-
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
+    
+    oled: sh1106@3c {
+        compatible = "sinowealth,sh1106";
         reg = <0x3c>;
-        width = <128>;
-        height = <32>;          // ← THAY ĐỔI: 64 → 32 (1.3 inch)
-        segment-offset = <0>;
+        width = <129>;          // SH1106: 129 (thay vì 128)
+        height = <64>;          // OLED 1.3 inch SH1106: 64 pixels
+        segment-offset = <1>;   // SH1106 cần offset 1
         page-offset = <0>;
         display-offset = <0>;
-        multiplex-ratio = <31>; // ← THAY ĐỔI: 63 → 31 (32-1)
+        multiplex-ratio = <63>; // 64-1 = 63
         segment-remap;
         com-invdir;
-        com-sequential;         // ← THÊM DÒNG NÀY (bắt buộc cho 128x32)
         inversion-on;
         prechargep = <0x22>;
     };
