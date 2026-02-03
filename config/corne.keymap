@@ -211,6 +211,8 @@
 &none  &kp Z            &kp X            &kp C                &kp D              &kp V        &kp K           &kp H               &kp P                 &kp B            &kp FSLH          &none
                                          &lt 8 ESCAPE         &lt 2 SPACE        &lt 0 TAB    &lt 4 KP_ENTER  &lt 5 BACKSPACE     &lt 6 RIGHT_ALT
             >;
+
+            label = "Dft";
         };
 
         Alternative {
@@ -220,6 +222,8 @@
 &none  &kp Z            &kp X            &kp C                &kp V              &kp B        &kp N           &kp M               &kp COMMA             &kp DOT          &kp FSLH                  &none
                                          &lt 8 ESCAPE         &lt 2 SPACE        &lt 0 TAB    &lt 4 KP_ENTER  &lt 5 BACKSPACE     &lt 6 RIGHT_ALT
             >;
+
+            label = "Alt";
         };
 
         Nav {
@@ -229,6 +233,8 @@
 &none  &none         &kp RIGHT_ALT  &none             &none           &none    &kp INSERT    &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none
                                     &none             &none           &none    &kp ENTER     &kp BACKSPACE  &kp DELETE
             >;
+
+            label = "Nav";
         };
 
         Mouse {
@@ -238,6 +244,8 @@
 &none  &none         &kp RIGHT_ALT  &none             &none           &none    &none        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
                                     &none             &none           &none    &mkp MB2     &mkp MB1        &mkp MB3
             >;
+
+            label = "Mouse";
         };
 
         Symbol {
@@ -247,6 +255,8 @@
 &none  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &none  &none      &none      &kp RALT  &none     &none
                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none  &none      &none
             >;
+
+            label = "Sym";
         };
 
         Num {
@@ -256,6 +266,8 @@
 &none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &none  &none      &none      &kp RALT  &none     &none
                           &kp DOT  &kp N0  &kp MINUS    &none  &none      &none
             >;
+
+            label = "Num";
         };
 
         Func {
@@ -265,6 +277,8 @@
 &none  &kp F10  &kp F1  &kp F2    &kp F3     &kp PAUSE_BREAK    &none  &none      &none      &kp RALT  &none     &none
                         &kp RGUI  &kp SPACE  &kp TAB            &none  &none      &none
             >;
+
+            label = "Func";
         };
 
         Buttons {
@@ -274,6 +288,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
+
+            label = "Butt";
         };
 
         Media {
@@ -283,6 +299,8 @@
 &none  &none     &kp LALT  &none      &none      &none    &mod_output      &mod_bt_choose_0  &mod_bt_choose_1  &mod_bt_choose_2   &mod_bt_choose_3     &none
                            &none      &none      &none    &kp K_STOP       &kp K_PLAY_PAUSE  &kp K_MUTE
             >;
+
+            label = "Media";
         };
 
         layer_9 {
@@ -297,4 +315,3 @@
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 };
-
