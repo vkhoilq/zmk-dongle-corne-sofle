@@ -163,22 +163,28 @@
         Genpd1 {
             bindings = <&wp1>;
             key-positions = <10 22 34>;
-            layers = <0 1>;
+            layers = <2>;
         };
 
         Genpd2 {
             bindings = <&wp2>;
             key-positions = <9 21 33>;
-            layers = <0 1>;
+            layers = <2>;
         };
 
-        JSimulate {
+        cmbBackspace {
             bindings = <&kp J>;
-            key-positions = <2 3>;
+            key-positions = <25 26>;
             layers = <0 1>;
         };
 
-        Repeat {
+        cmbEnter {
+            bindings = <&key_repeat>;
+            key-positions = <24 25>;
+            layers = <0 1>;
+        };
+
+        cmbRepeat {
             bindings = <&key_repeat>;
             key-positions = <27 28>;
             layers = <0 1>;
@@ -212,7 +218,7 @@
                                          &lt 8 ESCAPE         &lt 2 SPACE        &lt 0 TAB    &lt 4 KP_ENTER  &lt 5 BACKSPACE     &lt 6 RIGHT_ALT
             >;
 
-            label = "Dft";
+            label = "DEF";
         };
 
         Alternative {
@@ -223,29 +229,29 @@
                                          &lt 8 ESCAPE         &lt 2 SPACE        &lt 0 TAB    &lt 4 KP_ENTER  &lt 5 BACKSPACE     &lt 6 RIGHT_ALT
             >;
 
-            label = "Alt";
+            label = "ALT";
         };
 
         Nav {
             bindings = <
-&none  &bootloader   &none          &none             &none           &none    &kp K_AGAIN   &kp K_PASTE    &kp K_COPY      &kp K_CUT     &kp K_UNDO       &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none    &kp CAPSLOCK  &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&none  &none         &kp RIGHT_ALT  &none             &none           &none    &kp INSERT    &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none
-                                    &none             &none           &none    &kp ENTER     &kp BACKSPACE  &kp DELETE
+&none  &bootloader   &none         &none             &none                     &none    &kp LS(LG(Z))  &kp LG(V)      &kp LG(C)       &kp LG(X)     &kp LG(Z)        &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT            &none    &kp CAPSLOCK   &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&none  &none         &none         &none             &sk LS(LA(LC(LEFT_GUI)))  &none    &kp INSERT     &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none
+                                   &none             &none                     &none    &kp ENTER      &kp BACKSPACE  &kp DELETE
             >;
 
-            label = "Nav";
+            label = "NAV";
         };
 
         Mouse {
             bindings = <
-&none  &bootloader   &none          &none             &none           &none    &kp K_AGAIN  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none    &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-&none  &none         &kp RIGHT_ALT  &none             &none           &none    &none        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
-                                    &none             &none           &none    &mkp MB2     &mkp MB1        &mkp MB3
+&none  &bootloader   &none          &none             &none           &none                   &kp K_AGAIN  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LS(LG(NUMBER_4))    &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&none  &none         &kp RIGHT_ALT  &none             &none           &none                   &none        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+                                    &none             &none           &none                   &mkp MB2     &mkp MB1        &mkp MB3
             >;
 
-            label = "Mouse";
+            label = "MOUSE";
         };
 
         Symbol {
@@ -256,18 +262,18 @@
                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none  &none      &none
             >;
 
-            label = "Sym";
+            label = "SYM";
         };
 
         Num {
             bindings = <
-&none  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &none  &none      &none      &none     &none     &none
-&none  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
-&none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &none  &none      &none      &kp RALT  &none     &none
-                          &kp DOT  &kp N0  &kp MINUS    &none  &none      &none
+&none  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &kp PERIOD  &kp COMMA  &none      &none     &none     &none
+&none  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &none       &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
+&none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &none       &none      &none      &kp RALT  &none     &none
+                          &kp DOT  &kp N0  &kp MINUS    &none       &none      &none
             >;
 
-            label = "Num";
+            label = "NUM";
         };
 
         Func {
@@ -278,7 +284,7 @@
                         &kp RGUI  &kp SPACE  &kp TAB            &none  &none      &none
             >;
 
-            label = "Func";
+            label = "FUNC";
         };
 
         Buttons {
@@ -288,8 +294,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
-
-            label = "Butt";
         };
 
         Media {
@@ -299,8 +303,6 @@
 &none  &none     &kp LALT  &none      &none      &none    &mod_output      &mod_bt_choose_0  &mod_bt_choose_1  &mod_bt_choose_2   &mod_bt_choose_3     &none
                            &none      &none      &none    &kp K_STOP       &kp K_PLAY_PAUSE  &kp K_MUTE
             >;
-
-            label = "Media";
         };
 
         layer_9 {
