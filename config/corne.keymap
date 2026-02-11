@@ -303,6 +303,8 @@
 &none  &none     &kp RIGHT_ALT  &none      &none      &none    &mod_output      &mod_bt_choose_0  &mod_bt_choose_1  &mod_bt_choose_2   &mod_bt_choose_3     &none
                                 &none      &none      &none    &kp C_STOP       &kp C_PLAY_PAUSE  &kp K_MUTE
             >;
+
+            label = "Media";
         };
 
         layer_9 {
