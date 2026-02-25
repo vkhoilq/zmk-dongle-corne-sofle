@@ -218,9 +218,9 @@
 
         Default_layer {
             bindings = <
-&none  &kp Q            &kp W            &kp F                &kp J              &kp COMMA    &kp PERIOD      &kp L               &kp U                 &kp Y            &kp SQT           &none
-&none  &hrl LEFT_GUI A  &hrl LEFT_ALT R  &hrl LEFT_CONTROL S  &hrl LEFT_SHIFT T  &kp G        &kp M           &hrm RIGHT_SHIFT N  &hrm RIGHT_CONTROL E  &hrm LEFT_ALT I  &hrm RIGHT_GUI O  &none
-&none  &kp Z            &kp X            &kp C                &kp D              &kp V        &kp K           &kp H               &kp P                 &kp B            &kp FSLH          &none
+&none  &kp Q            &kp W            &kp F                &kp J              &kp COMMA    &kp PERIOD      &kp L               &kp U                 &kp Y            &kp SQT           &kp C_VOLUME_UP
+&none  &hrl LEFT_GUI A  &hrl LEFT_ALT R  &hrl LEFT_CONTROL S  &hrl LEFT_SHIFT T  &kp G        &kp M           &hrm RIGHT_SHIFT N  &hrm RIGHT_CONTROL E  &hrm LEFT_ALT I  &hrm RIGHT_GUI O  &kp C_VOLUME_DOWN
+&none  &kp Z            &kp X            &kp C                &kp D              &kp V        &kp K           &kp H               &kp P                 &kp B            &kp FSLH          &kp K_MUTE
                                          &lt 8 ESCAPE         &lt 2 SPACE        &lt 3 TAB    &lt 4 KP_ENTER  &lt 5 BACKSPACE     &lt 6 RIGHT_ALT
             >;
 
