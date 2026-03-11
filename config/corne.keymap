@@ -143,6 +143,12 @@
             mods = <(MOD_LSFT)>;
             keep-mods = <(MOD_LSFT)>;
         };
+
+        tly_mouse: tly_mouse {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "TLY_MOUSE";
+            #binding-cells = <1>;
+        };
     };
 
     combos {
@@ -240,7 +246,7 @@
 
         Nav {
             bindings = <
-&none  &bootloader   &none         &none             &none                     &none                    &kp LS(LG(Z))  &kp LG(V)      &kp LG(C)       &kp LG(X)     &kp LG(Z)        &none
+&none  &bootloader   &none         &none             &none                     &tog 2                   &kp LS(LG(Z))  &kp LG(V)      &kp LG(C)       &kp LG(X)     &kp LG(Z)        &none
 &none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT            &none                    &caps_word     &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
 &none  &none         &none         &none             &sk LS(LA(LC(LEFT_GUI)))  &kp LS(LA(LC(LG(V))))    &kp INSERT     &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none
                                    &none             &none                     &none                    &kp ENTER      &kp BACKSPACE  &kp DELETE
@@ -251,7 +257,7 @@
 
         Mouse {
             bindings = <
-&none  &bootloader   &none         &none             &none           &none                   &kp K_AGAIN  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &none
+&none  &bootloader   &none         &none             &none           &tog 3                  &kp K_AGAIN  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &none
 &none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LS(LG(NUMBER_4))    &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
 &none  &none         &none         &kp RIGHT_ALT     &none           &none                   &none        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
                                    &none             &none           &none                   &mkp MB2     &mkp MB1        &mkp MB3
