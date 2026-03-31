@@ -219,14 +219,14 @@
         wp1: wp1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(A) &kp BACKSPACE &kp AT &kp LS(T) &kp I &kp N0 &kp N2 &kp C &kp A &kp N0 &kp N9 &kp ENTER>;
+            bindings = <&kp AT &kp LS(T) &kp I &kp N0 &kp N2 &kp C &kp A &kp N0 &kp N9 &kp ENTER>;
             label = "WP1";
         };
 
         wp2: wp3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(A) &kp BACKSPACE &kp AT &kp LS(A) &kp N &kp H &kp K &kp H &kp O &kp I &kp N1 &kp N4 &kp B &kp E &kp N &kp G &kp O &kp C &kp ENTER>;
+            bindings = <&kp AT &kp LS(A) &kp N &kp H &kp K &kp H &kp O &kp I &kp N1 &kp N4 &kp B &kp E &kp N &kp G &kp O &kp C &kp ENTER>;
             label = "WP3";
         };
     };
