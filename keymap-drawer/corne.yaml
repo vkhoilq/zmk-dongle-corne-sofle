@@ -1,90 +1,422 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
-  BAS: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, N, M, ',', ., /, Esc, '$$mdi:apple-keyboard-command$$', LOW, ␣, ⏎, RAI, '$$mdi:apple-keyboard-option$$']
-  LOW:
-  - ↹
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - $$mdi:backspace-outline$$
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
+  DEF:
+  - ''
+  - Q
+  - W
+  - F
+  - J
+  - ','
+  - .
+  - L
+  - U
+  - Y
+  - ''''
+  - VOLUME UP
+  - ''
+  - {t: A, h: LEFT GUI}
+  - {t: R, h: LEFT ALT}
+  - {t: S, h: LEFT CONTROL}
+  - {t: T, h: LEFT SHIFT}
+  - G
+  - M
+  - {t: N, h: RIGHT SHIFT}
+  - {t: E, h: RIGHT CONTROL}
+  - {t: I, h: LEFT ALT}
+  - {t: O, h: RIGHT GUI}
+  - VOLUME DOWN
+  - ''
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - P
+  - B
+  - /
+  - MUTE
+  - {t: ESCAPE, h: Media}
+  - {t: ␣, h: NAV}
+  - {t: ↹, h: MOUSE}
+  - {t: KP ENTER, h: SYM}
+  - {t: BACKSPACE, h: NUM}
+  - {t: RIGHT ALT, h: FUNC}
+  ALT:
+  - ''
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - ''
+  - ''
+  - {t: A, h: LEFT GUI}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LEFT CONTROL}
+  - {t: F, h: LEFT SHIFT}
+  - G
+  - H
+  - {t: J, h: RIGHT SHIFT}
+  - {t: K, h: RIGHT CONTROL}
+  - {t: L, h: LEFT ALT}
+  - {t: ;, h: RIGHT GUI}
+  - ''
+  - ''
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ''
+  - {t: ESCAPE, h: Media}
+  - {t: ␣, h: NAV}
+  - {t: ↹, h: MOUSE}
+  - {t: KP ENTER, h: SYM}
+  - {t: BACKSPACE, h: NUM}
+  - {t: RIGHT ALT, h: FUNC}
+  NAV:
+  - ''
+  - Boot
+  - ''
+  - ''
+  - ''
+  - {t: NAV, h: toggle}
+  - Sft+Gui+Z
+  - Gui+V
+  - Gui+C
+  - Gui+X
+  - Gui+Z
+  - ''
+  - ''
+  - LEFT GUI
+  - LEFT ALT
+  - LEFT CONTROL
+  - LEFT SHIFT
+  - ''
+  - Caps Word
   - ←
-  - ↓
-  - ↑
-  - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
+  - DOWN ARROW
+  - UP ARROW
+  - RIGHT ARROW
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: Meh+LEFT GUI, h: sticky}
+  - Hyper+V
+  - INSERT
+  - Home
+  - PAGE DOWN
+  - PAGE UP
+  - End
+  - ''
+  - ''
   - {type: held}
-  - ␣
-  - ⏎
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
-  RAI:
-  - ↹
-  - '!'
-  - '@'
-  - '#'
+  - ''
+  - ENTER
+  - BACKSPACE
+  - DELETE
+  MOUSE:
+  - ''
+  - Boot
+  - ''
+  - ''
+  - ''
+  - {t: MOUSE, h: toggle}
+  - AGAIN
+  - PASTE
+  - COPY
+  - CUT
+  - UNDO
+  - ''
+  - ''
+  - LEFT GUI
+  - LEFT ALT
+  - LEFT CONTROL
+  - LEFT SHIFT
+  - Sft+Gui+4
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - ''
+  - ''
+  - ''
+  - ''
+  - RIGHT ALT
+  - ''
+  - ''
+  - ''
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - '&mkp MB2'
+  - '&mkp MB1'
+  - '&mkp MB3'
+  SYM:
+  - ''
+  - '{'
+  - AMPERSAND
+  - '*'
+  - (
+  - '}'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ':'
   - $
   - '%'
   - ^
-  - AMPS
-  - KP MULTIPLY
+  - +
+  - ''
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - ''
+  - ''
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - '|'
+  - ''
+  - ''
+  - ''
+  - $$mdi:apple-keyboard-option$$
+  - ''
+  - ''
   - (
   - )
-  - $$mdi:backspace-outline$$
-  - $$mdi:apple-keyboard-control$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
-  - '`'
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - _
-  - +
-  - '{'
-  - '}'
-  - '|'
-  - '~'
-  - $$mdi:apple-keyboard-command$$
-  - '&studio_unlock'
-  - ␣
-  - ⏎
-  - {t: '&studio_unlock', type: held}
+  - {type: held}
+  - ''
+  - ''
+  NUM:
+  - ''
+  - '['
+  - '7'
+  - '8'
+  - '9'
+  - ']'
+  - .
+  - ','
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ;
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - ''
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - ''
+  - ''
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - \
+  - ''
+  - ''
+  - ''
+  - $$mdi:apple-keyboard-option$$
+  - ''
+  - ''
+  - .
+  - '0'
+  - '-'
+  - ''
+  - {type: held}
+  - ''
+  FUNC:
+  - ''
+  - F12
+  - F7
+  - F8
+  - F9
+  - PRINTSCREEN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F11
+  - F4
+  - F5
+  - F6
+  - SCROLLLOCK
+  - ''
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - ''
+  - ''
+  - F10
+  - F1
+  - F2
+  - F3
+  - Pause Break
+  - ''
+  - ''
+  - ''
+  - $$mdi:apple-keyboard-option$$
+  - ''
+  - ''
+  - $$mdi:apple-keyboard-command$$
+  - ␣
+  - ↹
+  - ''
+  - ''
+  - {type: held}
+  Buttons:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Media:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
+  - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', s: '$$mdi:led-on$$'}
+  - {t: '$$mdi:led-on$$', s: '$$mdi:led-outline$$'}
+  - {t: '$$mdi:led-outline$$', s: '$$mdi:led-on$$'}
+  - {t: '$$mdi:led-outline$$', s: '$$mdi:led-on$$'}
+  - ''
+  - ''
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - {t: EP TOG, s: EP OFF}
+  - ⏮️
+  - VOLUME UP
+  - VOLUME DOWN
+  - ⏭️
+  - ''
+  - ''
+  - ''
+  - ''
+  - RIGHT ALT
+  - ''
+  - ''
+  - {t: OUT TOG, s: Out USB}
+  - {t: BT 1, s: BT CLR}
+  - {t: BT 2, s: BT CLR}
+  - {t: BT 3, s: BT CLR}
+  - {t: BT 4, s: BT CLR}
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - STOP
+  - PLAY PAUSE
+  - MUTE
+  '9': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+    '', '', '']
+combos:
+- p: [0, 12, 24]
+  k: {t: ALT, h: toggle}
+  l: [DEF]
+- p: [0, 12, 24]
+  k: {t: DEF, h: toggle}
+  l: [ALT, NAV, MOUSE]
+- p: [10, 22, 34]
+  k: '&wp1'
+  l: [NAV]
+- p: [9, 21, 33]
+  k: '&wp2'
+  l: [NAV]
+- p: [25, 26]
+  k: J
+  l: [DEF, ALT]
+- p: [24, 25]
+  k: '&key_repeat'
+  l: [DEF, ALT]
+- p: [27, 28]
+  k: '&key_repeat'
+  l: [DEF, ALT]
+- p: [38, 39]
+  k: Alt+ENTER
+  l: [DEF, ALT]
+- p: [2, 14, 26]
+  k: {t: MOUSE, h: toggle}
+  l: [DEF, ALT]
+- p: [1, 13, 25]
+  k: {t: NAV, h: toggle}
+  l: [DEF, ALT]
