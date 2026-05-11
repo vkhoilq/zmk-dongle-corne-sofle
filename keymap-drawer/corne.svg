@@ -481,6 +481,14 @@ rect.held, rect.combo.held {
 <text x="84" y="105" class="combo tap layer-activator">NAV</text>
 </a><text x="84" y="116" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-7">
+<path d="M196,84 l0,-37" class="combo"/>
+<path d="M196,84 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="182" y="71" width="28" height="26" class="combo"/>
+<a href="#DEF">
+<text x="196" y="84" class="combo tap layer-activator">DEF</text>
+</a><text x="196" y="95" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 331)" class="layer-ALT">
@@ -716,6 +724,14 @@ rect.held, rect.combo.held {
 <text x="84" y="105" class="combo tap layer-activator">NAV</text>
 </a><text x="84" y="116" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-7">
+<path d="M196,84 l0,-37" class="combo"/>
+<path d="M196,84 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="182" y="71" width="28" height="26" class="combo"/>
+<a href="#DEF">
+<text x="196" y="84" class="combo tap layer-activator">DEF</text>
+</a><text x="196" y="95" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 661)" class="layer-NAV">
@@ -922,6 +938,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="686" y="78" width="28" height="26" class="combo"/>
 <text x="700" y="91" class="combo tap">&amp;wp2</text>
 </g>
+<g class="combo combopos-3">
+<path d="M196,84 l0,-37" class="combo"/>
+<path d="M196,84 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="182" y="71" width="28" height="26" class="combo"/>
+<a href="#DEF">
+<text x="196" y="84" class="combo tap layer-activator">DEF</text>
+</a><text x="196" y="95" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 992)" class="layer-MOUSE">
@@ -1121,6 +1145,14 @@ rect.held, rect.combo.held {
 <text x="28" y="105" class="combo tap layer-activator">DEF</text>
 </a><text x="28" y="116" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-1">
+<path d="M196,84 l0,-37" class="combo"/>
+<path d="M196,84 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="182" y="71" width="28" height="26" class="combo"/>
+<a href="#DEF">
+<text x="196" y="84" class="combo tap layer-activator">DEF</text>
+</a><text x="196" y="95" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1323)" class="layer-SYM">
@@ -1274,6 +1306,14 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+</g>
+<g class="combo combopos-0">
+<path d="M196,84 l0,-37" class="combo"/>
+<path d="M196,84 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="182" y="71" width="28" height="26" class="combo"/>
+<a href="#DEF">
+<text x="196" y="84" class="combo tap layer-activator">DEF</text>
+</a><text x="196" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1432,6 +1472,14 @@ rect.held, rect.combo.held {
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
+<g class="combo combopos-0">
+<path d="M196,84 l0,-37" class="combo"/>
+<path d="M196,84 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="182" y="71" width="28" height="26" class="combo"/>
+<a href="#DEF">
+<text x="196" y="84" class="combo tap layer-activator">DEF</text>
+</a><text x="196" y="95" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1984)" class="layer-FUNC">
@@ -1587,6 +1635,14 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(616, 205)" class="key held keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+</g>
+<g class="combo combopos-0">
+<path d="M196,84 l0,-37" class="combo"/>
+<path d="M196,84 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="182" y="71" width="28" height="26" class="combo"/>
+<a href="#DEF">
+<text x="196" y="84" class="combo tap layer-activator">DEF</text>
+</a><text x="196" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1760,6 +1816,14 @@ rect.held, rect.combo.held {
 <g transform="translate(616, 205)" class="key trans keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g class="combo combopos-0">
+<path d="M196,84 l0,-37" class="combo"/>
+<path d="M196,84 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="182" y="71" width="28" height="26" class="combo"/>
+<a href="#DEF">
+<text x="196" y="84" class="combo tap layer-activator">DEF</text>
+</a><text x="196" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1948,6 +2012,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">MUTE</text>
 </g>
+<g class="combo combopos-0">
+<path d="M196,84 l0,-37" class="combo"/>
+<path d="M196,84 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="182" y="71" width="28" height="26" class="combo"/>
+<a href="#DEF">
+<text x="196" y="84" class="combo tap layer-activator">DEF</text>
+</a><text x="196" y="95" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 2976)" class="layer-9">
@@ -2078,6 +2150,14 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+</g>
+<g class="combo combopos-0">
+<path d="M196,84 l0,-37" class="combo"/>
+<path d="M196,84 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="182" y="71" width="28" height="26" class="combo"/>
+<a href="#DEF">
+<text x="196" y="84" class="combo tap layer-activator">DEF</text>
+</a><text x="196" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

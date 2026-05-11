@@ -420,3 +420,5 @@ combos:
 - p: [1, 13, 25]
   k: {t: NAV, h: toggle}
   l: [DEF, ALT]
+- p: [3, 15, 27]
+  k: {t: DEF, h: toggle}
