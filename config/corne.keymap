@@ -213,6 +213,11 @@
             key-positions = <1 13 25>;
             layers = <0 1>;
         };
+
+        ToDef {
+            bindings = <&to 0>;
+            key-positions = <3 15 27>;
+        };
     };
 
     macros {
