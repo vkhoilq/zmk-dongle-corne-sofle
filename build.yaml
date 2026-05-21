@@ -62,17 +62,20 @@ include:
     # snippet: zmk-usb-logging
     ### Xiao_Dongle END ###
 
-    ### ProMicro_Dongle START ###
-    # nice_nano_v2 dongle
+
+        ### Xiao_Dongle START ###
   - board: seeeduino_xiao_ble
     shield: corne_dongle_xiao
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"JohnXiaoDongle\"
-    artifact-name: nice_corne_dongle_xiao
+    #  -DCONFIG_ZMK_USB=y  -DCONFIG_ZMK_BLE=y
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"John Xiao_Dongle\" -DCONFIG_ZMK_STUDIO=y
+    artifact-name: xiao_corne_dongle
     snippet: studio-rpc-usb-uart
+
+
     # snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: corne_dongle_pro_micro dongle_display
-    # cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Dongle_O\"
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"JohnOledDongle\"
     artifact-name: nice_corne_dongle_oled
     snippet: studio-rpc-usb-uart
     # snippet: zmk-usb-logging
@@ -89,6 +92,10 @@ include:
     shield: corne_right
     artifact-name: nice_corne_right
 
+  - board: nice_nano_v2
+    shield: corne_left
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"JohnWCorne\"
+    artifact-name: nice_corne_left
     
     
     ### Pro Micro END ###
