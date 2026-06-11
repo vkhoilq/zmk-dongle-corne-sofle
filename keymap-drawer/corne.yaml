@@ -26,7 +26,7 @@ layers:
   - {t: O, h: RIGHT GUI}
   - VOLUME DOWN
   - ''
-  - Z
+  - {t: Z, h: CMD}
   - X
   - C
   - D
@@ -35,7 +35,7 @@ layers:
   - H
   - P
   - B
-  - /
+  - {t: /, h: CMD}
   - MUTE
   - {t: ESCAPE, h: Media}
   - {t: ␣, h: NAV}
@@ -92,12 +92,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: NAV, h: toggle}
-  - Sft+Gui+Z
-  - Gui+V
-  - Gui+C
-  - Gui+X
-  - Gui+Z
+  - ''
+  - ''
+  - '&ok_prev_word'
+  - '&ok_zoom_in'
+  - '&ok_zoom_out'
+  - '&ok_next_word'
   - ''
   - ''
   - LEFT GUI
@@ -105,7 +105,7 @@ layers:
   - LEFT CONTROL
   - LEFT SHIFT
   - ''
-  - Caps Word
+  - Caps Lock
   - ←
   - DOWN ARROW
   - UP ARROW
@@ -135,12 +135,12 @@ layers:
   - ''
   - ''
   - ''
-  - {t: MOUSE, h: toggle}
-  - AGAIN
-  - PASTE
-  - COPY
-  - CUT
-  - UNDO
+  - ''
+  - ''
+  - '&mmv_fast MOVE_LEFT'
+  - '&mmv_fast MOVE_DOWN'
+  - '&mmv_fast MOVE_UP'
+  - '&mmv_fast MOVE_RIGHT'
   - ''
   - ''
   - LEFT GUI
@@ -387,8 +387,92 @@ layers:
   - STOP
   - PLAY PAUSE
   - MUTE
-  '9': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
-    '', '', '']
+  CMD:
+  - ''
+  - ''
+  - '&ok_close'
+  - '&ok_find'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&ok_redo'
+  - ''
+  - ''
+  - ''
+  - '&ok_sel_all'
+  - ''
+  - '&ok_save'
+  - '&ok_new_tab'
+  - ''
+  - ''
+  - '&ok_new_win'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '&ok_undo', type: held}
+  - '&ok_cut'
+  - '&ok_copy'
+  - ''
+  - '&ok_paste'
+  - ''
+  - '&ok_find_replace'
+  - '&ok_sel_prev_word'
+  - '&ok_sel_next_word'
+  - ''
+  - ''
+  - Caps Word
+  - Ctl+␣
+  - ''
+  - '&leader1'
+  - '&ok_sel_line_start'
+  - '&ok_sel_line_end'
+  SEL:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&ok_prev_app'
+  - '&ok_next_app'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&ok_prev_tab'
+  - '&ok_next_tab'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&ok_prev_word'
+  - '&ok_next_word'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [10, 22, 34]
   k: '&wp1'
