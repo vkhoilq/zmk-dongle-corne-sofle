@@ -682,7 +682,7 @@
 
         cmbRaycast {
             bindings = <&kp LA(ENTER)>;
-            key-positions = <38 39>;
+            key-positions = <39 38>;
             layers = <0 1>;
         };
 
@@ -715,7 +715,7 @@
 
         CmbRaycastChat {
             bindings = <&kp LA(SPACE)>;
-            key-positions = <53 56 37 40>;
+            key-positions = <53 56 40 37>;
             layers = <0>;
         };
     };
