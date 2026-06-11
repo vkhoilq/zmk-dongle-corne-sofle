@@ -491,8 +491,8 @@ combos:
   k: {t: DEF, h: toggle}
 - p: [27, 28]
   k: '&key_repeat'
-- p: [53, 56, 40, 37]
-  k: Alt+␣
-  l: [DEF]
 - p: [32, 31]
   k: '&key_repeat'
+- p: [37, 40]
+  k: Alt+␣
+  l: [DEF, ALT]
