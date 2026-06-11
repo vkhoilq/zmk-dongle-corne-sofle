@@ -8,6 +8,11 @@ manifest:
     # nice_oled - nice_epaper - dongle_display!view - oled Adapter
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: urob
+      url-base: https://github.com/urob
+    - name: mentaldesk
+      url-base: https://github.com/mentaldesk
+
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -29,5 +34,15 @@ manifest:
     - name: zmk-oled-adapter
       remote: mctechnology17
       revision: main
+    - name: zmk-leader-key
+      remote: urob
+      revision: v0.3 # Should match ZMK release.
+    - name: zmk-adaptive-key
+      remote: urob
+      revision: v0.3 # Should match ZMK release.
+    - name: oskey
+      remote: mentaldesk
+      revision: main
+      
   self:
     path: config
