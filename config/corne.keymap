@@ -707,16 +707,16 @@
             timeout-ms = <50>;
         };
 
-        cmbRepeatR {
-            bindings = <&key_repeat>;
-            key-positions = <45 46 31 32>;
-            timeout-ms = <50>;
-        };
-
         CmbRaycastChat {
             bindings = <&kp LA(SPACE)>;
             key-positions = <53 56 40 37>;
             layers = <0>;
+        };
+
+        cmbRepeatR {
+            bindings = <&key_repeat>;
+            key-positions = <32 31>;
+            timeout-ms = <50>;
         };
     };
 
