@@ -509,13 +509,14 @@
         };
 
         mmv_fast: mmv_fast {
-                compatible = "zmk,behavior-input-two-axis";
-                #binding-cells = <1>;
-                x-input-code = <INPUT_REL_X>;
-                y-input-code = <INPUT_REL_Y>;
-                time-to-max-speed-ms = <50>;   // Almost instant acceleration (default is 300)
-                acceleration-exponent = <1>;
+            compatible = "zmk,behavior-input-two-axis";
+            #binding-cells = <1>;
+            x-input-code = <INPUT_REL_X>;
+            y-input-code = <INPUT_REL_Y>;
+            time-to-max-speed-ms = <50>;   // Almost instant acceleration (default is 300)
+            acceleration-exponent = <1>;
         };
+
         my_fast_lt: my_fast_lt {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -667,7 +668,6 @@
     combos {
         compatible = "zmk,combos";
 
-
         Genpd1 {
             bindings = <&wp1>;
             key-positions = <10 22 34>;
@@ -679,7 +679,6 @@
             key-positions = <9 21 33>;
             layers = <2>;
         };
-
 
         cmbRaycast {
             bindings = <&kp LA(ENTER)>;
@@ -701,6 +700,7 @@
             bindings = <&to 0>;
             key-positions = <3 15 27>;
         };
+
         cmbRepeatL {
             bindings = <&key_repeat>;
             key-positions = <39 40>;
@@ -712,12 +712,12 @@
             key-positions = <45 46>;
             timeout-ms = <50>;
         };
+
         CmbRaycastChat {
             bindings = <&kp LA(SPACE)>;
             key-positions = <53 56>;
             layers = <0>;
         };
-
     };
 
     macros {
@@ -741,9 +741,9 @@
 
         Default_layer {
             bindings = <
-&none  &kp Q            &kp W            &kp F                &kp J              &kp COMMA    &kp PERIOD      &kp L               &kp U                 &kp Y            &kp SQT           &kp C_VOLUME_UP
-&none  &hrl LEFT_GUI A  &hrl LEFT_ALT R  &hrl LEFT_CONTROL S  &hrl LEFT_SHIFT T  &kp G        &kp M           &hrm RIGHT_SHIFT N  &hrm RIGHT_CONTROL E  &hrm LEFT_ALT I  &hrm RIGHT_GUI O  &kp C_VOLUME_DOWN
-&none  &kp Z            &kp X            &kp C                &kp D              &kp V        &kp K           &kp H               &kp P                 &kp B            &kp FSLH          &kp K_MUTE
+&none  &kp Q            &kp W            &kp F                &kp J              &kp COMMA    &kp PERIOD      &kp L               &kp U                 &kp Y            &kp SQT              &kp C_VOLUME_UP
+&none  &hrl LEFT_GUI A  &hrl LEFT_ALT R  &hrl LEFT_CONTROL S  &hrl LEFT_SHIFT T  &kp G        &kp M           &hrm RIGHT_SHIFT N  &hrm RIGHT_CONTROL E  &hrm LEFT_ALT I  &hrm RIGHT_GUI O     &kp C_VOLUME_DOWN
+&none  &my_fast_lt 9 Z  &kp X            &kp C                &kp D              &kp V        &kp K           &kp H               &kp P                 &kp B            &my_fast_lt 9 SLASH  &kp K_MUTE
                                          &lt 8 ESCAPE         &lt 2 SPACE        &lt 3 TAB    &lt 4 KP_ENTER  &lt 5 BACKSPACE     &lt 6 RIGHT_ALT
             >;
 
@@ -763,10 +763,10 @@
 
         Nav {
             bindings = <
-&none  &bootloader   &none         &none             &none                     &tog 2                   &kp LS(LG(Z))  &kp LG(V)      &kp LG(C)       &kp LG(X)     &kp LG(Z)        &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT            &none                    &caps_word     &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
-&none  &none         &none         &none             &sk LS(LA(LC(LEFT_GUI)))  &kp LS(LA(LC(LG(V))))    &kp INSERT     &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none
-                                   &none             &none                     &none                    &kp ENTER      &kp BACKSPACE  &kp DELETE
+&none  &bootloader   &none         &none             &none                     &none                    &none       &ok_prev_word  &ok_zoom_in     &ok_zoom_out  &ok_next_word    &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT            &none                    &kp CAPS    &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none
+&none  &none         &none         &none             &sk LS(LA(LC(LEFT_GUI)))  &kp LS(LA(LC(LG(V))))    &kp INSERT  &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none
+                                   &none             &none                     &none                    &kp ENTER   &kp BACKSPACE  &kp DELETE
             >;
 
             label = "NAV";
@@ -774,10 +774,10 @@
 
         Mouse {
             bindings = <
-&none  &bootloader   &none         &none             &none           &tog 3                  &kp K_AGAIN  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LS(LG(NUMBER_4))    &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-&none  &none         &none         &kp RIGHT_ALT     &none           &none                   &none        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
-                                   &none             &none           &none                   &mkp MB2     &mkp MB1        &mkp MB3
+&none  &bootloader   &none         &none             &none           &none                   &none     &mmv_fast MOVE_LEFT  &mmv_fast MOVE_DOWN  &mmv_fast MOVE_UP  &mmv_fast MOVE_RIGHT  &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LS(LG(NUMBER_4))    &none     &mmv MOVE_LEFT       &mmv MOVE_DOWN       &mmv MOVE_UP       &mmv MOVE_RIGHT       &none
+&none  &none         &none         &kp RIGHT_ALT     &none           &none                   &none     &msc SCRL_LEFT       &msc SCRL_DOWN       &msc SCRL_UP       &msc SCRL_RIGHT       &none
+                                   &none             &none           &none                   &mkp MB2  &mkp MB1             &mkp MB3
             >;
 
             label = "MOUSE";
@@ -836,13 +836,26 @@
             label = "Media";
         };
 
-        layer_9 {
+        CMD {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none  &none  &none    &none  &none  &none
+&none  &none        &ok_close  &ok_find    &none          &none        &none     &none               &none              &ok_redo           &none  &none
+&none  &ok_sel_all  &none      &ok_save    &ok_new_tab    &none        &none     &ok_new_win         &none              &none              &none  &none
+&none  &ok_undo     &ok_cut    &ok_copy    &none          &ok_paste    &none     &ok_find_replace    &ok_sel_prev_word  &ok_sel_next_word  &none  &none
+                               &caps_word  &kp LC(SPACE)  &none        &leader1  &ok_sel_line_start  &ok_sel_line_end
             >;
+
+            label = "CMD";
+        };
+
+        SEL {
+            bindings = <
+&trans  &trans  &trans  &trans  &ok_prev_app   &ok_next_app     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &ok_prev_tab   &ok_next_tab     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &ok_prev_word  &ok_next_word    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans         &trans           &trans  &trans  &trans
+            >;
+
+            label = "SEL";
         };
     };
 
