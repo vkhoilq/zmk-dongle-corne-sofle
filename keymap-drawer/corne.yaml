@@ -13,7 +13,7 @@ layers:
   - Y
   - ''''
   - VOLUME UP
-  - '&ok_ltm 9 I'
+  - '&ok_ltm 10 I'
   - {t: A, h: LEFT GUI}
   - {t: R, h: LEFT ALT}
   - {t: S, h: LEFT CONTROL}

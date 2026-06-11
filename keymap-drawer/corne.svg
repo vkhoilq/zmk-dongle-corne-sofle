@@ -296,7 +296,7 @@ rect.held, rect.combo.held {
 <g transform="translate(28, 105)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 86%">&amp;ok_ltm</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">9</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">I</tspan>
+<tspan x="0" dy="-1.2em" style="font-size: 86%">&amp;ok_ltm</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">10</tspan><tspan x="0" dy="1.2em" style="font-size: 86%">I</tspan>
 </text>
 </g>
 <g transform="translate(84, 105)" class="key keypos-13">
