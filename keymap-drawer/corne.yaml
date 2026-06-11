@@ -489,10 +489,10 @@ combos:
   k: {t: NAV, h: toggle}
 - p: [3, 15, 27]
   k: {t: DEF, h: toggle}
-- p: [39, 40]
+- p: [27, 28]
   k: '&key_repeat'
-- p: [45, 46]
+- p: [45, 46, 31, 32]
   k: '&key_repeat'
-- p: [53, 56]
+- p: [53, 56, 37, 40]
   k: Alt+␣
   l: [DEF]
