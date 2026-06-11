@@ -390,35 +390,25 @@ layers:
   '9': ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
     '', '', '']
 combos:
-- p: [0, 12, 24]
-  k: {t: ALT, h: toggle}
-  l: [DEF]
-- p: [0, 12, 24]
-  k: {t: DEF, h: toggle}
-  l: [ALT, NAV, MOUSE]
 - p: [10, 22, 34]
   k: '&wp1'
   l: [NAV]
 - p: [9, 21, 33]
   k: '&wp2'
   l: [NAV]
-- p: [25, 26]
-  k: J
-  l: [DEF, ALT]
-- p: [24, 25]
-  k: '&key_repeat'
-  l: [DEF, ALT]
-- p: [27, 28]
-  k: '&key_repeat'
-  l: [DEF, ALT]
 - p: [38, 39]
   k: Alt+ENTER
   l: [DEF, ALT]
 - p: [2, 14, 26]
   k: {t: MOUSE, h: toggle}
-  l: [DEF, ALT]
 - p: [1, 13, 25]
   k: {t: NAV, h: toggle}
-  l: [DEF, ALT]
 - p: [3, 15, 27]
   k: {t: DEF, h: toggle}
+- p: [39, 40]
+  k: '&key_repeat'
+- p: [45, 46]
+  k: '&key_repeat'
+- p: [53, 56]
+  k: Alt+␣
+  l: [DEF]
