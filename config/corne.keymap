@@ -863,9 +863,9 @@
 
         SEL {
             bindings = <
-&trans  &trans  &trans  &trans  &ok_prev_app   &ok_next_app     &trans  &trans  &trans  &trans  &trans  &os_sel
-&trans  &trans  &trans  &trans  &ok_prev_tab   &ok_next_tab     &trans  &trans  &trans  &trans  &trans  &os_sel
-&trans  &trans  &trans  &trans  &ok_prev_word  &ok_next_word    &trans  &trans  &trans  &trans  &trans  &os_sel
+&trans  &trans  &trans  &trans  &ok_prev_app   &ok_next_app     &trans  &trans  &trans  &trans  &trans  &os_sel 0
+&trans  &trans  &trans  &trans  &ok_prev_tab   &ok_next_tab     &trans  &trans  &trans  &trans  &trans  &os_sel 1
+&trans  &trans  &trans  &trans  &ok_prev_word  &ok_next_word    &trans  &trans  &trans  &trans  &trans  &os_sel 2
                         &trans  &trans         &trans           &trans  &trans  &trans
             >;
 
